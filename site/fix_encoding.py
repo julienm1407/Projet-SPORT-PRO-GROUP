@@ -10,10 +10,13 @@ from __future__ import annotations
 
 from pathlib import Path
 
+ROOT = Path(__file__).parent.parent
 SITE = Path(__file__).parent
 TARGETS = (
     SITE / "index.html",
     SITE / "css" / "styles.css",
+    SITE / "LISEZMOI.md",
+    ROOT / "README.md",
 )
 
 CONTROL_CHAR = "\u009d"

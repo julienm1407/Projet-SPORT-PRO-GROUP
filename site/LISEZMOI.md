@@ -1,6 +1,6 @@
-# BEST-SELLER — Site vitrine
+# BEST-SELLER â€” Site vitrine
 
-## Ouvrir en local (immédiat)
+## Ouvrir en local (immÃ©diat)
 
 Double-cliquez sur **`index.html`** ou :
 
@@ -8,22 +8,22 @@ Double-cliquez sur **`index.html`** ou :
 open "/Users/juju/Desktop/Rendu Sport Pro Group/site/index.html"
 ```
 
-## Partager à votre employeur
+## Partager Ã  votre employeur
 
-**Option 1 — Fichier ZIP (recommandé)**  
-Envoyez **`BEST-SELLER-site.zip`** (dossier parent). Décompressez, ouvrez `site/index.html`.
+**Option 1 â€” Fichier ZIP (recommandÃ©)**  
+Envoyez **`BEST-SELLER-site.zip`** (dossier parent). DÃ©compressez, ouvrez `site/index.html`.
 
-**Option 2 — Mise en ligne gratuite (5 min)**  
+**Option 2 â€” Mise en ligne gratuite (5 min)**  
 1. Allez sur [https://app.netlify.com/drop](https://app.netlify.com/drop)  
-2. Glissez-déposez le dossier **`site`** entier  
+2. Glissez-dÃ©posez le dossier **`site`** entier  
 3. Netlify vous donne une URL publique du type `https://xxx.netlify.app`
 
-**Option 3 — USB / partage réseau**  
-Copiez le dossier `site` sur une clé ou un drive partagé.
+**Option 3 â€” USB / partage rÃ©seau**  
+Copiez le dossier `site` sur une clÃ© ou un drive partagÃ©.
 
 ## Contenu
 
-- Proposition stratégique (texte + PDF)
-- Teaser vidéo intégré
+- Proposition stratÃ©gique (texte + PDF)
+- Teaser vidÃ©o intÃ©grÃ©
 - Tous les visuels Facebook, Instagram, LinkedIn, Stories
-- Médiathèque avec zoom au clic
+- MÃ©diathÃ¨que avec zoom au clic

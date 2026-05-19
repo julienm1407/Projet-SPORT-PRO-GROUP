@@ -1,8 +1,8 @@
-# Projet SPORT PRO GROUP — BEST-SELLER
+# Projet SPORT PRO GROUP â€” BEST-SELLER
 
-Proposition stratégique **BEST-SELLER** (EQUIP EPS 2026–2027) — Sport Pro Group.
+Proposition stratÃ©gique **BEST-SELLER** (EQUIP EPS 2026â€“2027) â€” Sport Pro Group.
 
-**Travail réalisé par Julien Mondet.**
+**Travail rÃ©alisÃ© par Julien Mondet.**
 
 ## Site en ligne (GitHub Pages)
 
@@ -12,10 +12,10 @@ Proposition stratégique **BEST-SELLER** (EQUIP EPS 2026–2027) — Sport Pro Group.
 
 1. **Settings** ? **Pages**
 2. Source : **Deploy from a branch**
-3. Branch : **gh-pages** · dossier **/ (root)**
-4. Sauvegarder — le workflow déploie `site/` sur `gh-pages` à chaque push sur `main`
+3. Branch : **gh-pages** Â· dossier **/ (root)**
+4. Sauvegarder â€” le workflow dÃ©ploie `site/` sur `gh-pages` Ã  chaque push sur `main`
 
-## Prévisualisation locale
+## PrÃ©visualisation locale
 
 ```bash
 cd site
@@ -26,5 +26,5 @@ Puis ouvrir http://127.0.0.1:8765
 
 ## Structure
 
-- `site/` — site vitrine (HTML, CSS, JS, assets)
-- `site/fix_encoding.py` — normalisation UTF-8 après édition
+- `site/` â€” site vitrine (HTML, CSS, JS, assets)
+- `site/fix_encoding.py` â€” normalisation UTF-8 aprÃ¨s Ã©dition
