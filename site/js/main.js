@@ -77,20 +77,91 @@
     });
   });
 
-  const retroFilters = document.querySelectorAll(".retro-filter");
+  const retroTableBody = document.querySelector(".retro-table tbody");
   const retroRows = document.querySelectorAll(".retro-table tbody tr[data-phase]");
+  const retroPhaseFilters = document.querySelectorAll(".retro-filter--phase");
+  const retroDateFilters = document.querySelectorAll(".retro-filter--date");
+  const retroSortBtns = document.querySelectorAll(".retro-sort-btn");
 
-  retroFilters.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const phase = btn.dataset.filter;
-      retroFilters.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
+  if (retroTableBody && retroRows.length) {
+    let currentPhase = "all";
+    let currentMonth = "all";
+    let currentSort = "asc";
+
+    function parseRowTime(row) {
+      const text = row.cells[3]?.textContent.trim() || "";
+      const match = text.match(/(\d{1,2})[:h](\d{2})/);
+      if (!match) return 0;
+      return parseInt(match[1], 10) * 60 + parseInt(match[2], 10);
+    }
+
+    function getRowDate(row) {
+      if (row.dataset.sortDate) return row.dataset.sortDate;
+      const parts = row.cells[1]?.textContent.trim().split("/");
+      if (parts?.length !== 3) return "";
+      const [d, m, y] = parts;
+      return `${y}-${m.padStart(2, "0")}-${d.padStart(2, "0")}`;
+    }
+
+    retroRows.forEach((row) => {
+      const iso = getRowDate(row);
+      if (iso) {
+        row.dataset.sortDate = iso;
+        row.dataset.sortMonth = iso.slice(0, 7);
+      }
+    });
+
+    function applyRetroTable() {
       retroRows.forEach((row) => {
-        const match = phase === "all" || row.dataset.phase === phase;
-        row.classList.toggle("is-hidden", !match);
+        const phaseMatch = currentPhase === "all" || row.dataset.phase === currentPhase;
+        const month = row.dataset.sortMonth || getRowDate(row).slice(0, 7);
+        const dateMatch = currentMonth === "all" || month === currentMonth;
+        row.classList.toggle("is-hidden", !(phaseMatch && dateMatch));
+      });
+
+      const visible = Array.from(retroRows).filter((row) => !row.classList.contains("is-hidden"));
+      visible.sort((a, b) => {
+        const dateCmp = getRowDate(a).localeCompare(getRowDate(b));
+        if (dateCmp !== 0) return currentSort === "asc" ? dateCmp : -dateCmp;
+        const timeCmp = parseRowTime(a) - parseRowTime(b);
+        return currentSort === "asc" ? timeCmp : -timeCmp;
+      });
+
+      visible.forEach((row) => retroTableBody.appendChild(row));
+      Array.from(retroRows)
+        .filter((row) => row.classList.contains("is-hidden"))
+        .forEach((row) => retroTableBody.appendChild(row));
+    }
+
+    retroPhaseFilters.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        currentPhase = btn.dataset.filter;
+        retroPhaseFilters.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        applyRetroTable();
       });
     });
-  });
+
+    retroDateFilters.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        currentMonth = btn.dataset.dateFilter;
+        retroDateFilters.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        applyRetroTable();
+      });
+    });
+
+    retroSortBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        currentSort = btn.dataset.sort;
+        retroSortBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        applyRetroTable();
+      });
+    });
+
+    applyRetroTable();
+  }
 
   const kpiDashboard = document.getElementById("kpi-dashboard");
   if (kpiDashboard && "IntersectionObserver" in window) {

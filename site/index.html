@@ -567,15 +567,36 @@
             </span>
           </button>
           <div id="retro-detail-panel" class="retro-disclosure-body" hidden>
-                  <div class="retro-filters" role="group" aria-label="Filtrer par phase">
-                    <button type="button" class="retro-filter active" data-filter="all">Toutes les phases</button>
-                    <button type="button" class="retro-filter" data-filter="Humaniser">Humaniser</button>
-                    <button type="button" class="retro-filter" data-filter="Intriguer">Intriguer</button>
-                    <button type="button" class="retro-filter" data-filter="R&eacute;v&eacute;ler">R&eacute;v&eacute;ler</button>
-                    <button type="button" class="retro-filter" data-filter="Conversion">Conversion</button>
-                    <button type="button" class="retro-filter" data-filter="Premium">Premium</button>
-                    <button type="button" class="retro-filter" data-filter="UNSS">UNSS</button>
-                    <button type="button" class="retro-filter" data-filter="Cl&ocirc;ture">Cl&ocirc;ture</button>
+                  <div class="retro-filter-toolbar">
+                    <div class="retro-filter-group">
+                      <span class="retro-filter-group-label">Phase</span>
+                      <div class="retro-filters" role="group" aria-label="Filtrer par phase">
+                        <button type="button" class="retro-filter retro-filter--phase active" data-filter="all">Toutes les phases</button>
+                        <button type="button" class="retro-filter retro-filter--phase" data-filter="Humaniser">Humaniser</button>
+                        <button type="button" class="retro-filter retro-filter--phase" data-filter="Intriguer">Intriguer</button>
+                        <button type="button" class="retro-filter retro-filter--phase" data-filter="R&eacute;v&eacute;ler">R&eacute;v&eacute;ler</button>
+                        <button type="button" class="retro-filter retro-filter--phase" data-filter="Conversion">Conversion</button>
+                        <button type="button" class="retro-filter retro-filter--phase" data-filter="Premium">Premium</button>
+                        <button type="button" class="retro-filter retro-filter--phase" data-filter="UNSS">UNSS</button>
+                        <button type="button" class="retro-filter retro-filter--phase" data-filter="Cl&ocirc;ture">Cl&ocirc;ture</button>
+                      </div>
+                    </div>
+                    <div class="retro-filter-group">
+                      <span class="retro-filter-group-label">P&eacute;riode</span>
+                      <div class="retro-filters" role="group" aria-label="Filtrer par date">
+                        <button type="button" class="retro-filter retro-filter--date active" data-date-filter="all">Toutes les dates</button>
+                        <button type="button" class="retro-filter retro-filter--date" data-date-filter="2026-08">Ao&ucirc;t 2026</button>
+                        <button type="button" class="retro-filter retro-filter--date" data-date-filter="2026-09">Septembre 2026</button>
+                        <button type="button" class="retro-filter retro-filter--date" data-date-filter="2026-10">Octobre 2026</button>
+                      </div>
+                    </div>
+                    <div class="retro-filter-group">
+                      <span class="retro-filter-group-label">Tri</span>
+                      <div class="retro-filters" role="group" aria-label="Ordre chronologique">
+                        <button type="button" class="retro-sort-btn active" data-sort="asc">Chronologique &uarr;</button>
+                        <button type="button" class="retro-sort-btn" data-sort="desc">Chronologique &darr;</button>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="retro-table-wrap">
