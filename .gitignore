@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+*.pyc
+.vscode/
+.cursor/
+node_modules/
+_site_tail.html
+_conclusion_fragment.html
+_retroplanning_fragment.html
