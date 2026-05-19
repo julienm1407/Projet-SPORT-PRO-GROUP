@@ -492,122 +492,139 @@
           </article>
         </div>
 
-        <div class="retro-filters" role="group" aria-label="Filtrer par phase">
-          <button type="button" class="retro-filter active" data-filter="all">Toutes les phases</button>
-          <button type="button" class="retro-filter" data-filter="Humaniser">Humaniser</button>
-          <button type="button" class="retro-filter" data-filter="Intriguer">Intriguer</button>
-          <button type="button" class="retro-filter" data-filter="R&eacute;v&eacute;ler">R&eacute;v&eacute;ler</button>
-          <button type="button" class="retro-filter" data-filter="Conversion">Conversion</button>
-          <button type="button" class="retro-filter" data-filter="Premium">Premium</button>
-          <button type="button" class="retro-filter" data-filter="UNSS">UNSS</button>
-          <button type="button" class="retro-filter" data-filter="Cl&ocirc;ture">Cl&ocirc;ture</button>
-        </div>
+        <details class="retro-disclosure">
+          <summary class="retro-disclosure-summary">
+            Détail des publications
+            <span class="retro-disclosure-hint">28 entrées · filtres par phase</span>
+          </summary>
+          <div class="retro-disclosure-body">
+                  <div class="retro-filters" role="group" aria-label="Filtrer par phase">
+                    <button type="button" class="retro-filter active" data-filter="all">Toutes les phases</button>
+                    <button type="button" class="retro-filter" data-filter="Humaniser">Humaniser</button>
+                    <button type="button" class="retro-filter" data-filter="Intriguer">Intriguer</button>
+                    <button type="button" class="retro-filter" data-filter="R&eacute;v&eacute;ler">R&eacute;v&eacute;ler</button>
+                    <button type="button" class="retro-filter" data-filter="Conversion">Conversion</button>
+                    <button type="button" class="retro-filter" data-filter="Premium">Premium</button>
+                    <button type="button" class="retro-filter" data-filter="UNSS">UNSS</button>
+                    <button type="button" class="retro-filter" data-filter="Cl&ocirc;ture">Cl&ocirc;ture</button>
+                  </div>
 
-        <div class="retro-table-wrap">
-          <table class="retro-table">
-            <thead>
-              <tr>
-                <th scope="col">Phase</th>
-                <th scope="col">Date</th>
-                <th scope="col">Jour</th>
-                <th scope="col">Heure</th>
-                <th scope="col">Plateforme</th>
-                <th scope="col">Contenu</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr data-phase="Humaniser"><td><span class="retro-badge retro-badge--humaniser">Humaniser</span></td><td>24/08/2026</td><td>Lundi</td><td>18:30</td><td>Facebook</td><td>Interview Xavier</td></tr>
-              <tr data-phase="Humaniser"><td><span class="retro-badge retro-badge--humaniser">Humaniser</span></td><td>24/08/2026</td><td>Lundi</td><td>19:00</td><td>Instagram Reels</td><td>Interview Xavier</td></tr>
-              <tr data-phase="Humaniser"><td><span class="retro-badge retro-badge--humaniser">Humaniser</span></td><td>24/08/2026</td><td>Lundi</td><td>20:00</td><td>Instagram Story</td><td>Partage Reels Xavier</td></tr>
-              <tr data-phase="Humaniser"><td><span class="retro-badge retro-badge--humaniser">Humaniser</span></td><td>25/08/2026</td><td>Mardi</td><td>08:30</td><td>LinkedIn</td><td>Carrousel Xavier</td></tr>
-              <tr data-phase="Intriguer"><td><span class="retro-badge retro-badge--intriguer">Intriguer</span></td><td>31/08/2026</td><td>Lundi</td><td>08:30</td><td>Email</td><td>Email A/B BEST-SELLER</td></tr>
-              <tr data-phase="Intriguer"><td><span class="retro-badge retro-badge--intriguer">Intriguer</span></td><td>31/08/2026</td><td>Lundi</td><td>18:30</td><td>Facebook</td><td>Teaser BEST-SELLER</td></tr>
-              <tr data-phase="Intriguer"><td><span class="retro-badge retro-badge--intriguer">Intriguer</span></td><td>31/08/2026</td><td>Lundi</td><td>19:00</td><td>Instagram Reels</td><td>Teaser vid&eacute;o</td></tr>
-              <tr data-phase="Intriguer"><td><span class="retro-badge retro-badge--intriguer">Intriguer</span></td><td>03/09/2026</td><td>Jeudi</td><td>08:30</td><td>LinkedIn</td><td>Vision campagne</td></tr>
-              <tr data-phase="R&eacute;v&eacute;ler"><td><span class="retro-badge retro-badge--reveler">R&eacute;v&eacute;ler</span></td><td>07/09/2026</td><td>Lundi</td><td>18:30</td><td>Instagram</td><td>Post principal BEST-SELLER</td></tr>
-              <tr data-phase="R&eacute;v&eacute;ler"><td><span class="retro-badge retro-badge--reveler">R&eacute;v&eacute;ler</span></td><td>07/09/2026</td><td>Lundi</td><td>19:00</td><td>Facebook</td><td>Post BEST-SELLER</td></tr>
-              <tr data-phase="R&eacute;v&eacute;ler"><td><span class="retro-badge retro-badge--reveler">R&eacute;v&eacute;ler</span></td><td>08/09/2026</td><td>Mardi</td><td>08:00</td><td>LinkedIn</td><td>BEST-SELLER + r&eacute;flexion</td></tr>
-              <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>14/09/2026</td><td>Lundi</td><td>12:00</td><td>Instagram Story</td><td>Story campagne</td></tr>
-              <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>15/09/2026</td><td>Mardi</td><td>12:00</td><td>Instagram Story</td><td>Story Ballon</td></tr>
-              <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>16/09/2026</td><td>Mercredi</td><td>12:00</td><td>Instagram Story</td><td>Story Sifflet</td></tr>
-              <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>16/09/2026</td><td>Mercredi</td><td>18:00</td><td>Instagram Reels</td><td>Extrait court m&eacute;trage #1</td></tr>
-              <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>17/09/2026</td><td>Jeudi</td><td>12:00</td><td>Instagram Story</td><td>Story Chasuble</td></tr>
-              <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>18/09/2026</td><td>Vendredi</td><td>12:00</td><td>Instagram Story</td><td>Story Raquette</td></tr>
-              <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>18/09/2026</td><td>Vendredi</td><td>18:00</td><td>Instagram Reels</td><td>Extrait court m&eacute;trage #2</td></tr>
-              <tr data-phase="Premium"><td><span class="retro-badge retro-badge--premium">Premium</span></td><td>21/09/2026</td><td>Lundi</td><td>19:00</td><td>YouTube</td><td>Court m&eacute;trage complet</td></tr>
-              <tr data-phase="Premium"><td><span class="retro-badge retro-badge--premium">Premium</span></td><td>22/09/2026</td><td>Mardi</td><td>18:30</td><td>Facebook</td><td>Extrait vid&eacute;o</td></tr>
-              <tr data-phase="Premium"><td><span class="retro-badge retro-badge--premium">Premium</span></td><td>24/09/2026</td><td>Jeudi</td><td>08:00</td><td>LinkedIn</td><td>Interview vid&eacute;o Xavier</td></tr>
-              <tr data-phase="Premium"><td><span class="retro-badge retro-badge--premium">Premium</span></td><td>25/09/2026</td><td>Vendredi</td><td>18:00</td><td>Instagram Reels</td><td>Extrait court m&eacute;trage #3</td></tr>
-              <tr data-phase="UNSS"><td><span class="retro-badge retro-badge--unss">UNSS</span></td><td>28/09/2026</td><td>Lundi</td><td>18:30</td><td>Facebook</td><td>Annonce tournoi UNSS</td></tr>
-              <tr data-phase="UNSS"><td><span class="retro-badge retro-badge--unss">UNSS</span></td><td>29/09/2026</td><td>Mardi</td><td>12:00</td><td>Instagram Story</td><td>Compte &agrave; rebours tournoi</td></tr>
-              <tr data-phase="UNSS"><td><span class="retro-badge retro-badge--unss">UNSS</span></td><td>01/10/2026</td><td>Jeudi</td><td>08:00</td><td>LinkedIn</td><td>Sport Pro Group acteur terrain</td></tr>
-              <tr data-phase="UNSS"><td><span class="retro-badge retro-badge--unss">UNSS</span></td><td>03/10/2026</td><td>Samedi</td><td>18:00</td><td>Instagram Reels</td><td>Teaser tournoi</td></tr>
-              <tr data-phase="Cl&ocirc;ture"><td><span class="retro-badge retro-badge--cloture">Cl&ocirc;ture</span></td><td>10/10/2026</td><td>Samedi</td><td>10h&ndash;17h</td><td>Terrain</td><td>Tournoi UNSS</td></tr>
-              <tr data-phase="Cl&ocirc;ture"><td><span class="retro-badge retro-badge--cloture">Cl&ocirc;ture</span></td><td>11/10/2026</td><td>Dimanche</td><td>18:00</td><td>Tous r&eacute;seaux</td><td>L'aventure continue</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="retro-objectives">
-          <h3 class="retro-objectives-title">Objectifs par phase</h3>
-          <div class="cards retro-objective-cards">
-            <article class="card">
-              <h3>Humaniser</h3>
-              <ul>
-                <li>Cr&eacute;er un point d'appui humain</li>
-                <li>Version immersive &mdash; story partage 20h</li>
-                <li>Rappel service &amp; cr&eacute;dibilit&eacute;</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Intriguer</h3>
-              <ul>
-                <li>Cr&eacute;er l'attente &amp; la curiosit&eacute;</li>
-                <li>Story partage 20h</li>
-                <li>Renforcer image de marque</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>R&eacute;v&eacute;ler</h3>
-              <ul>
-                <li>Lancement officiel</li>
-                <li>Catalogue &rarr; terrain (story 20h)</li>
-                <li>Vision professionnelle</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Conversion</h3>
-              <ul>
-                <li>Moment achat &mdash; trafic site + Xavier</li>
-                <li>D&eacute;couverte produit (ballon, sifflet, chasuble, raquette&hellip;)</li>
-                <li>Produit en action &mdash; stories &amp; reels</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Premium</h3>
-              <ul>
-                <li>Contenu premium &amp; transmission</li>
-                <li>Immersion &mdash; story partage</li>
-                <li>Accompagnement &amp; d&eacute;couverte</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>UNSS</h3>
-              <ul>
-                <li>Cr&eacute;er anticipation &amp; engagement</li>
-                <li>Image marque terrain</li>
-                <li>Cr&eacute;er l'attente avant l'&eacute;v&eacute;nement</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Cl&ocirc;ture</h3>
-              <ul>
-                <li>Exp&eacute;rience r&eacute;elle &mdash; stories live &amp; interviews</li>
-                <li>Fin de narration &mdash; &laquo;&nbsp;L'aventure continue&nbsp;&raquo;</li>
-              </ul>
-            </article>
+                  <div class="retro-table-wrap">
+                    <table class="retro-table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Phase</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Jour</th>
+                          <th scope="col">Heure</th>
+                          <th scope="col">Plateforme</th>
+                          <th scope="col">Contenu</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr data-phase="Humaniser"><td><span class="retro-badge retro-badge--humaniser">Humaniser</span></td><td>24/08/2026</td><td>Lundi</td><td>18:30</td><td>Facebook</td><td>Interview Xavier</td></tr>
+                        <tr data-phase="Humaniser"><td><span class="retro-badge retro-badge--humaniser">Humaniser</span></td><td>24/08/2026</td><td>Lundi</td><td>19:00</td><td>Instagram Reels</td><td>Interview Xavier</td></tr>
+                        <tr data-phase="Humaniser"><td><span class="retro-badge retro-badge--humaniser">Humaniser</span></td><td>24/08/2026</td><td>Lundi</td><td>20:00</td><td>Instagram Story</td><td>Partage Reels Xavier</td></tr>
+                        <tr data-phase="Humaniser"><td><span class="retro-badge retro-badge--humaniser">Humaniser</span></td><td>25/08/2026</td><td>Mardi</td><td>08:30</td><td>LinkedIn</td><td>Carrousel Xavier</td></tr>
+                        <tr data-phase="Intriguer"><td><span class="retro-badge retro-badge--intriguer">Intriguer</span></td><td>31/08/2026</td><td>Lundi</td><td>08:30</td><td>Email</td><td>Email A/B BEST-SELLER</td></tr>
+                        <tr data-phase="Intriguer"><td><span class="retro-badge retro-badge--intriguer">Intriguer</span></td><td>31/08/2026</td><td>Lundi</td><td>18:30</td><td>Facebook</td><td>Teaser BEST-SELLER</td></tr>
+                        <tr data-phase="Intriguer"><td><span class="retro-badge retro-badge--intriguer">Intriguer</span></td><td>31/08/2026</td><td>Lundi</td><td>19:00</td><td>Instagram Reels</td><td>Teaser vid&eacute;o</td></tr>
+                        <tr data-phase="Intriguer"><td><span class="retro-badge retro-badge--intriguer">Intriguer</span></td><td>03/09/2026</td><td>Jeudi</td><td>08:30</td><td>LinkedIn</td><td>Vision campagne</td></tr>
+                        <tr data-phase="R&eacute;v&eacute;ler"><td><span class="retro-badge retro-badge--reveler">R&eacute;v&eacute;ler</span></td><td>07/09/2026</td><td>Lundi</td><td>18:30</td><td>Instagram</td><td>Post principal BEST-SELLER</td></tr>
+                        <tr data-phase="R&eacute;v&eacute;ler"><td><span class="retro-badge retro-badge--reveler">R&eacute;v&eacute;ler</span></td><td>07/09/2026</td><td>Lundi</td><td>19:00</td><td>Facebook</td><td>Post BEST-SELLER</td></tr>
+                        <tr data-phase="R&eacute;v&eacute;ler"><td><span class="retro-badge retro-badge--reveler">R&eacute;v&eacute;ler</span></td><td>08/09/2026</td><td>Mardi</td><td>08:00</td><td>LinkedIn</td><td>BEST-SELLER + r&eacute;flexion</td></tr>
+                        <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>14/09/2026</td><td>Lundi</td><td>12:00</td><td>Instagram Story</td><td>Story campagne</td></tr>
+                        <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>15/09/2026</td><td>Mardi</td><td>12:00</td><td>Instagram Story</td><td>Story Ballon</td></tr>
+                        <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>16/09/2026</td><td>Mercredi</td><td>12:00</td><td>Instagram Story</td><td>Story Sifflet</td></tr>
+                        <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>16/09/2026</td><td>Mercredi</td><td>18:00</td><td>Instagram Reels</td><td>Extrait court m&eacute;trage #1</td></tr>
+                        <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>17/09/2026</td><td>Jeudi</td><td>12:00</td><td>Instagram Story</td><td>Story Chasuble</td></tr>
+                        <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>18/09/2026</td><td>Vendredi</td><td>12:00</td><td>Instagram Story</td><td>Story Raquette</td></tr>
+                        <tr data-phase="Conversion"><td><span class="retro-badge retro-badge--conversion">Conversion</span></td><td>18/09/2026</td><td>Vendredi</td><td>18:00</td><td>Instagram Reels</td><td>Extrait court m&eacute;trage #2</td></tr>
+                        <tr data-phase="Premium"><td><span class="retro-badge retro-badge--premium">Premium</span></td><td>21/09/2026</td><td>Lundi</td><td>19:00</td><td>YouTube</td><td>Court m&eacute;trage complet</td></tr>
+                        <tr data-phase="Premium"><td><span class="retro-badge retro-badge--premium">Premium</span></td><td>22/09/2026</td><td>Mardi</td><td>18:30</td><td>Facebook</td><td>Extrait vid&eacute;o</td></tr>
+                        <tr data-phase="Premium"><td><span class="retro-badge retro-badge--premium">Premium</span></td><td>24/09/2026</td><td>Jeudi</td><td>08:00</td><td>LinkedIn</td><td>Interview vid&eacute;o Xavier</td></tr>
+                        <tr data-phase="Premium"><td><span class="retro-badge retro-badge--premium">Premium</span></td><td>25/09/2026</td><td>Vendredi</td><td>18:00</td><td>Instagram Reels</td><td>Extrait court m&eacute;trage #3</td></tr>
+                        <tr data-phase="UNSS"><td><span class="retro-badge retro-badge--unss">UNSS</span></td><td>28/09/2026</td><td>Lundi</td><td>18:30</td><td>Facebook</td><td>Annonce tournoi UNSS</td></tr>
+                        <tr data-phase="UNSS"><td><span class="retro-badge retro-badge--unss">UNSS</span></td><td>29/09/2026</td><td>Mardi</td><td>12:00</td><td>Instagram Story</td><td>Compte &agrave; rebours tournoi</td></tr>
+                        <tr data-phase="UNSS"><td><span class="retro-badge retro-badge--unss">UNSS</span></td><td>01/10/2026</td><td>Jeudi</td><td>08:00</td><td>LinkedIn</td><td>Sport Pro Group acteur terrain</td></tr>
+                        <tr data-phase="UNSS"><td><span class="retro-badge retro-badge--unss">UNSS</span></td><td>03/10/2026</td><td>Samedi</td><td>18:00</td><td>Instagram Reels</td><td>Teaser tournoi</td></tr>
+                        <tr data-phase="Cl&ocirc;ture"><td><span class="retro-badge retro-badge--cloture">Cl&ocirc;ture</span></td><td>10/10/2026</td><td>Samedi</td><td>10h&ndash;17h</td><td>Terrain</td><td>Tournoi UNSS</td></tr>
+                        <tr data-phase="Cl&ocirc;ture"><td><span class="retro-badge retro-badge--cloture">Cl&ocirc;ture</span></td><td>11/10/2026</td><td>Dimanche</td><td>18:00</td><td>Tous r&eacute;seaux</td><td>L'aventure continue</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
           </div>
-        </div>
+        </details>
+
+        <details class="retro-disclosure">
+          <summary class="retro-disclosure-summary">
+            Objectifs par phase
+            <span class="retro-disclosure-hint">7 phases · stratégie opérationnelle</span>
+          </summary>
+          <div class="retro-disclosure-body">
+                  <div class="retro-objectives">
+                    <h3 class="retro-objectives-title">Objectifs par phase</h3>
+                    <div class="cards retro-objective-cards">
+                      <article class="card">
+                        <h3>Humaniser</h3>
+                        <ul>
+                          <li>Cr&eacute;er un point d'appui humain</li>
+                          <li>Version immersive &mdash; story partage 20h</li>
+                          <li>Rappel service &amp; cr&eacute;dibilit&eacute;</li>
+                        </ul>
+                      </article>
+                      <article class="card">
+                        <h3>Intriguer</h3>
+                        <ul>
+                          <li>Cr&eacute;er l'attente &amp; la curiosit&eacute;</li>
+                          <li>Story partage 20h</li>
+                          <li>Renforcer image de marque</li>
+                        </ul>
+                      </article>
+                      <article class="card">
+                        <h3>R&eacute;v&eacute;ler</h3>
+                        <ul>
+                          <li>Lancement officiel</li>
+                          <li>Catalogue &rarr; terrain (story 20h)</li>
+                          <li>Vision professionnelle</li>
+                        </ul>
+                      </article>
+                      <article class="card">
+                        <h3>Conversion</h3>
+                        <ul>
+                          <li>Moment achat &mdash; trafic site + Xavier</li>
+                          <li>D&eacute;couverte produit (ballon, sifflet, chasuble, raquette&hellip;)</li>
+                          <li>Produit en action &mdash; stories &amp; reels</li>
+                        </ul>
+                      </article>
+                      <article class="card">
+                        <h3>Premium</h3>
+                        <ul>
+                          <li>Contenu premium &amp; transmission</li>
+                          <li>Immersion &mdash; story partage</li>
+                          <li>Accompagnement &amp; d&eacute;couverte</li>
+                        </ul>
+                      </article>
+                      <article class="card">
+                        <h3>UNSS</h3>
+                        <ul>
+                          <li>Cr&eacute;er anticipation &amp; engagement</li>
+                          <li>Image marque terrain</li>
+                          <li>Cr&eacute;er l'attente avant l'&eacute;v&eacute;nement</li>
+                        </ul>
+                      </article>
+                      <article class="card">
+                        <h3>Cl&ocirc;ture</h3>
+                        <ul>
+                          <li>Exp&eacute;rience r&eacute;elle &mdash; stories live &amp; interviews</li>
+                          <li>Fin de narration &mdash; &laquo;&nbsp;L'aventure continue&nbsp;&raquo;</li>
+                        </ul>
+                      </article>
+                    </div>
+                  </div>
+          </div>
+        </details>
+
       </div>
     </section>
 
