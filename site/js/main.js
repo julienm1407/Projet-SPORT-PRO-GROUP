@@ -76,4 +76,22 @@
       });
     });
   });
+
+  const kpiDashboard = document.getElementById("kpi-dashboard");
+  if (kpiDashboard && "IntersectionObserver" in window) {
+    const kpiObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            kpiDashboard.classList.add("is-visible");
+            kpiObserver.unobserve(kpiDashboard);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    kpiObserver.observe(kpiDashboard);
+  } else if (kpiDashboard) {
+    kpiDashboard.classList.add("is-visible");
+  }
 })();
