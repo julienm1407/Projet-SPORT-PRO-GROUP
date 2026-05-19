@@ -6,11 +6,14 @@ Proposition stratégique **BEST-SELLER** (EQUIP EPS 2026–2027) — Sport Pro Group.
 
 ## Site en ligne (GitHub Pages)
 
-Après le déploiement, le site est accessible à :
-
 **https://julienm1407.github.io/Projet-SPORT-PRO-GROUP/**
 
-> Première mise en ligne : aller dans *Settings ? Pages* du dépôt et vérifier que la source est **GitHub Actions**.
+### Configuration Pages (une seule fois)
+
+1. **Settings** ? **Pages**
+2. Source : **Deploy from a branch**
+3. Branch : **gh-pages** · dossier **/ (root)**
+4. Sauvegarder — le workflow déploie `site/` sur `gh-pages` à chaque push sur `main`
 
 ## Prévisualisation locale
 
