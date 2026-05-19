@@ -62,6 +62,21 @@
     if (e.key === "Escape") closeLightbox();
   });
 
+  document.querySelectorAll(".retro-disclosure-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const panel = document.getElementById(btn.getAttribute("aria-controls"));
+      const wrap = btn.closest(".retro-disclosure");
+      if (!panel || !wrap) return;
+      const open = btn.getAttribute("aria-expanded") === "true";
+      const next = !open;
+      btn.setAttribute("aria-expanded", String(next));
+      panel.hidden = !next;
+      wrap.classList.toggle("is-open", next);
+      const icon = btn.querySelector(".retro-disclosure-icon");
+      if (icon) icon.textContent = next ? "\u2212" : "+";
+    });
+  });
+
   const retroFilters = document.querySelectorAll(".retro-filter");
   const retroRows = document.querySelectorAll(".retro-table tbody tr[data-phase]");
 

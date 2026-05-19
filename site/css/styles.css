@@ -1100,30 +1100,31 @@ a.gallery-item:focus-visible {
   overflow: hidden;
 }
 
-.retro-disclosure-summary {
+.retro-disclosure-btn {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem 1rem;
+  width: 100%;
+  margin: 0;
   padding: 1rem 1.25rem;
+  border: 0;
+  background: transparent;
+  font: inherit;
   font-weight: 700;
   font-size: 0.95rem;
+  text-align: left;
+  color: inherit;
   cursor: pointer;
-  list-style: none;
   user-select: none;
   transition: background 0.2s;
 }
 
-.retro-disclosure-summary:hover {
+.retro-disclosure-btn:hover {
   background: rgba(232, 90, 4, 0.06);
 }
 
-.retro-disclosure-summary::-webkit-details-marker {
-  display: none;
-}
-
-.retro-disclosure-summary::before {
-  content: "+";
+.retro-disclosure-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1138,8 +1139,15 @@ a.gallery-item:focus-visible {
   flex-shrink: 0;
 }
 
-.retro-disclosure[open] > .retro-disclosure-summary::before {
-  content: "\2212";
+.retro-disclosure-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+}
+
+.retro-disclosure-body[hidden] {
+  display: none !important;
 }
 
 .retro-disclosure-hint {

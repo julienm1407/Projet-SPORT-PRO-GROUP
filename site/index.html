@@ -558,12 +558,15 @@
           </article>
         </div>
 
-        <details class="retro-disclosure">
-          <summary class="retro-disclosure-summary">
-            Détail des publications
-            <span class="retro-disclosure-hint">28 entrées · filtres par phase</span>
-          </summary>
-          <div class="retro-disclosure-body">
+        <div class="retro-disclosure" data-collapsed>
+          <button type="button" class="retro-disclosure-btn" id="retro-detail-btn" aria-expanded="false" aria-controls="retro-detail-panel">
+            <span class="retro-disclosure-icon" aria-hidden="true">+</span>
+            <span class="retro-disclosure-label">
+              D&eacute;tail des publications
+              <span class="retro-disclosure-hint">28 entr&eacute;es &middot; filtres par phase</span>
+            </span>
+          </button>
+          <div id="retro-detail-panel" class="retro-disclosure-body" hidden>
                   <div class="retro-filters" role="group" aria-label="Filtrer par phase">
                     <button type="button" class="retro-filter active" data-filter="all">Toutes les phases</button>
                     <button type="button" class="retro-filter" data-filter="Humaniser">Humaniser</button>
@@ -620,14 +623,17 @@
                     </table>
                   </div>
           </div>
-        </details>
+        </div>
 
-        <details class="retro-disclosure">
-          <summary class="retro-disclosure-summary">
-            Objectifs par phase
-            <span class="retro-disclosure-hint">7 phases · stratégie opérationnelle</span>
-          </summary>
-          <div class="retro-disclosure-body">
+        <div class="retro-disclosure" data-collapsed>
+          <button type="button" class="retro-disclosure-btn" id="retro-objectives-btn" aria-expanded="false" aria-controls="retro-objectives-panel">
+            <span class="retro-disclosure-icon" aria-hidden="true">+</span>
+            <span class="retro-disclosure-label">
+              Objectifs par phase
+              <span class="retro-disclosure-hint">7 phases · stratégie opérationnelle</span>
+            </span>
+          </button>
+          <div id="retro-objectives-panel" class="retro-disclosure-body" hidden>
                   <div class="retro-objectives">
                     <h3 class="retro-objectives-title">Objectifs par phase</h3>
                     <div class="cards retro-objective-cards">
@@ -689,7 +695,7 @@
                     </div>
                   </div>
           </div>
-        </details>
+        </div>
 
       </div>
     </section>
